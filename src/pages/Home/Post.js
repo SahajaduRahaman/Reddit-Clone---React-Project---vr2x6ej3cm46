@@ -58,7 +58,7 @@ const Post = (props) => {
 
   return (
     <div>
-      <Card sx={{ minWidth: 275, bgcolor: '#4CCB88'}}>
+      <Card sx={{ minWidth: 275, bgcolor: '#43A270'}}>
         <CardHeader
           avatar={
             <Avatar sx={{ bgcolor: red[500] }} aria-label="recipe">

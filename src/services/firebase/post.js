@@ -39,7 +39,7 @@ export const addPost = async (body, createdBy) => {
 };
 
 export const updatePost = async (body, like, dislike, id) => {
-  const updatedPost = await updateDoc(doc(db, postsCollectionName, id), {
+  await updateDoc(doc(db, postsCollectionName, id), {
     body,
     like,
     dislike,
@@ -47,7 +47,7 @@ export const updatePost = async (body, like, dislike, id) => {
 };
 
 export const likeDislike = async (like, dislike, id) => {
-  const updatedPost = await updateDoc(doc(db, postsCollectionName, id), {
+  await updateDoc(doc(db, postsCollectionName, id), {
     like,
     dislike,
   });

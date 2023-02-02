@@ -2,18 +2,14 @@ import { initializeApp } from "firebase/app";
 import { getAuth } from "firebase/auth";
 import { getFirestore } from "firebase/firestore";
 
-const apiKey = process.env.REACT_APP_FIREBASE_API;
-const appId = process.env.REACT_APP_APP_ID;
-const measurementId = process.env.REACT_APP_MEASUREMENT_ID;
-
 const firebaseConfig = {
-  apiKey: apiKey,
+  apiKey: "AIzaSyDiMFyk6M7Fxd9ucUfSkqwYeDVSBg6dVqc",
   authDomain: "reddit-my-post.firebaseapp.com",
   projectId: "reddit-my-post",
   storageBucket: "reddit-my-post.appspot.com",
   messagingSenderId: "316636017514",
-  appId: appId,
-  measurementId: measurementId,
+  appId: "1:316636017514:web:6ae08a13cecc96a228eb13",
+  measurementId: "G-FVLFSDXPR8",
 };
 
 const app = initializeApp(firebaseConfig);
